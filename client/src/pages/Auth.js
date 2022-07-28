@@ -22,14 +22,14 @@ const Auth = () => {
                         className={'mt-4'}
                         placeholder={'Enter password...'}
                     />
-                    <div className={'d-flex justify-content-between mt-3 pl-3 pr-3'}>
+                    <div className={'d-flex justify-content-between mt-5 pl-3 pr-3'}>
                         {isLogin ?
                             <div>
-                                Haven't an account? <NavLink to={REGISTRATION_ROUTE}>Register now!</NavLink>
+                                Don't have an account? <NavLink to={REGISTRATION_ROUTE}>Register now!</NavLink>
                             </div>
                             :
                             <div>
-                                Have an account? <NavLink to={LOGIN_ROUTE}>Sign in!</NavLink>
+                                Do you have an account? <NavLink to={LOGIN_ROUTE}>Sign in!</NavLink>
                             </div>
                         }
                         <Button variant={'outline-success'}>
