@@ -3,20 +3,8 @@ import {makeAutoObservable} from "mobx";
 export default  class DeviceStore {
     constructor() {
         this._types = []
-        this._brands = [
-            {id: 1, name: 'Apple'},
-            {id: 2, name: 'Samsung'},
-            {id: 3, name: 'Asus'},
-            {id: 4, name: 'Lenovo'},
-        ];
-        this._devices = [
-            {id: 1, name: '12 pro', price: 25000, rating: 5, img: 'https://images.samsung.com/is/image/samsung/p6pim/ua/sm-a536elbdsek/gallery/ua-galaxy-a53-5g-a536-sm-a536elbdsek-531825969?$650_519_PNG$'},
-            {id: 2, name: '12 pro', price: 25000, rating: 5, img: 'https://images.samsung.com/is/image/samsung/p6pim/ua/sm-a536elbdsek/gallery/ua-galaxy-a53-5g-a536-sm-a536elbdsek-531825969?$650_519_PNG$'},
-            {id: 3, name: '12 pro', price: 25000, rating: 5, img: 'https://images.samsung.com/is/image/samsung/p6pim/ua/sm-a536elbdsek/gallery/ua-galaxy-a53-5g-a536-sm-a536elbdsek-531825969?$650_519_PNG$'},
-            {id: 4, name: '12 pro', price: 25000, rating: 5, img: 'https://images.samsung.com/is/image/samsung/p6pim/ua/sm-a536elbdsek/gallery/ua-galaxy-a53-5g-a536-sm-a536elbdsek-531825969?$650_519_PNG$'},
-            {id: 5, name: '12 pro', price: 25000, rating: 5, img: 'https://images.samsung.com/is/image/samsung/p6pim/ua/sm-a536elbdsek/gallery/ua-galaxy-a53-5g-a536-sm-a536elbdsek-531825969?$650_519_PNG$'},
-            {id: 6, name: '12 pro', price: 25000, rating: 5, img: 'https://images.samsung.com/is/image/samsung/p6pim/ua/sm-a536elbdsek/gallery/ua-galaxy-a53-5g-a536-sm-a536elbdsek-531825969?$650_519_PNG$'},
-        ];
+        this._brands = [];
+        this._devices = [];
         this._selectedType = {};
         this._selectedBrand = {};
         makeAutoObservable(this);
